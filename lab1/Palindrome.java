@@ -1,4 +1,3 @@
-package lab1;
 public class Palindrome {
     public static void main(String[] args) { 
         for (int i = 0; i < args.length; i++) {
@@ -8,10 +7,9 @@ public class Palindrome {
             if (isPalindrome(s)) {
                 System.out.println(s + " это палиндром");
             }
-            else {
-                System.out.println(s + " это не палиндром");
-            }
-
+            //  else {
+             //   System.out.println(s + " это не палиндром");
+            //} 
         }
     }
     public static String reverseString(String s) {
@@ -25,7 +23,7 @@ public class Palindrome {
     public static boolean isPalindrome(String s) {
         if (s.equals(reverseString(s))) {
             return true;
-        } 
+        }
         return false;
     }
     }
